@@ -28,7 +28,11 @@ const router  = new VueRouter({
         {path: '/home', component:require('./components/Home_users.vue').default}
     ]
 
-})
+});
+var NavbarMasterData = require('./components/AdminNavbar/NavbarMasterData.vue').default;
+var NavbarOperations = require('./components/AdminNavbar/NavbarOperations.vue').default;
+
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -38,5 +42,9 @@ const router  = new VueRouter({
 
 const app = new Vue({
     el: '#app',
-    router
+    router,
+    components: {
+        NavbarMasterData,
+        NavbarOperations
+      }
 });

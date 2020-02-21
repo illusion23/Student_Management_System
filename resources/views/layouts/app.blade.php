@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -34,16 +35,8 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         @auth('admin')  <!-- if admin  -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Master Data
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <router-link to='/admin'  class="dropdown-item"><i class="fa fa-home" aria-hidden="true"></i> Dashboard</router-link>
-                                <router-link to='/student'  class="dropdown-item"><i class="fa fa-user-graduate" aria-hidden="true"></i> Student</router-link>
-                                <router-link to='/class'  class="dropdown-item"><i class="fa fa-users" aria-hidden="true"></i> Class</router-link>
-
-                            </li>
+                            <Navbar-Master-Data></Navbar-Master-Data>
+                            <Navbar-Operations></Navbar-Operations>
                         @endauth
 
                         @auth('web')  <!-- if user -->

@@ -5,6 +5,7 @@
     <div class="sidebar-container">
 
             <!-- Page Content  -->
+
                 <div id="content">
                     <router-view></router-view>
                 </div>

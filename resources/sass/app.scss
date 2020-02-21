@@ -21,3 +21,8 @@ a {
   a:active {
     color: black;
   }
+
+.fa {width: 18px !important; height: 14px !important;}
+.fa-home{ color: red;}
+.fa-users{color: green;}
+.fa-user-graduate{color: $blue;}
